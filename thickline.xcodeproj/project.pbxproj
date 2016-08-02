@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2A1D6E71D29CD3200FA59CC /* ofxShivaVGRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */; };
+		E2A1D6E81D29CD3200FA59CC /* simpleVGContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */; };
+		E2A1D6E91D29CD3200FA59CC /* simpleVGPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C51D29CD3200FA59CC /* simpleVGPath.cpp */; };
+		E2A1D6EA1D29CD3200FA59CC /* shArrays.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6D31D29CD3200FA59CC /* shArrays.c */; };
+		E2A1D6EB1D29CD3200FA59CC /* shContext.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6D51D29CD3200FA59CC /* shContext.c */; };
+		E2A1D6EC1D29CD3200FA59CC /* shExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6D81D29CD3200FA59CC /* shExtensions.c */; };
+		E2A1D6ED1D29CD3200FA59CC /* shGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6DA1D29CD3200FA59CC /* shGeometry.c */; };
+		E2A1D6EE1D29CD3200FA59CC /* shImage.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6DC1D29CD3200FA59CC /* shImage.c */; };
+		E2A1D6EF1D29CD3200FA59CC /* shPaint.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6DE1D29CD3200FA59CC /* shPaint.c */; };
+		E2A1D6F01D29CD3200FA59CC /* shParams.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6E01D29CD3200FA59CC /* shParams.c */; };
+		E2A1D6F11D29CD3200FA59CC /* shPath.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6E11D29CD3200FA59CC /* shPath.c */; };
+		E2A1D6F21D29CD3200FA59CC /* shPipeline.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6E31D29CD3200FA59CC /* shPipeline.c */; };
+		E2A1D6F31D29CD3200FA59CC /* shVectors.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6E41D29CD3200FA59CC /* shVectors.c */; };
+		E2A1D6F41D29CD3200FA59CC /* shVgu.c in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6E61D29CD3200FA59CC /* shVgu.c */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxShivaVGRenderer.cpp; sourceTree = "<group>"; };
+		E2A1D6C21D29CD3200FA59CC /* ofxShivaVGRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxShivaVGRenderer.h; sourceTree = "<group>"; };
+		E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simpleVGContext.cpp; sourceTree = "<group>"; };
+		E2A1D6C41D29CD3200FA59CC /* simpleVGContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simpleVGContext.h; sourceTree = "<group>"; };
+		E2A1D6C51D29CD3200FA59CC /* simpleVGPath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simpleVGPath.cpp; sourceTree = "<group>"; };
+		E2A1D6C61D29CD3200FA59CC /* simpleVGPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simpleVGPath.h; sourceTree = "<group>"; };
+		E2A1D6C91D29CD3200FA59CC /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		E2A1D6CA1D29CD3200FA59CC /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		E2A1D6CD1D29CD3200FA59CC /* openvg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = openvg.h; sourceTree = "<group>"; };
+		E2A1D6CE1D29CD3200FA59CC /* vgu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vgu.h; sourceTree = "<group>"; };
+		E2A1D6CF1D29CD3200FA59CC /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		E2A1D6D01D29CD3200FA59CC /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		E2A1D6D21D29CD3200FA59CC /* shArrayBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shArrayBase.h; sourceTree = "<group>"; };
+		E2A1D6D31D29CD3200FA59CC /* shArrays.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shArrays.c; sourceTree = "<group>"; };
+		E2A1D6D41D29CD3200FA59CC /* shArrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shArrays.h; sourceTree = "<group>"; };
+		E2A1D6D51D29CD3200FA59CC /* shContext.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shContext.c; sourceTree = "<group>"; };
+		E2A1D6D61D29CD3200FA59CC /* shContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shContext.h; sourceTree = "<group>"; };
+		E2A1D6D71D29CD3200FA59CC /* shDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shDefs.h; sourceTree = "<group>"; };
+		E2A1D6D81D29CD3200FA59CC /* shExtensions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shExtensions.c; sourceTree = "<group>"; };
+		E2A1D6D91D29CD3200FA59CC /* shExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shExtensions.h; sourceTree = "<group>"; };
+		E2A1D6DA1D29CD3200FA59CC /* shGeometry.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shGeometry.c; sourceTree = "<group>"; };
+		E2A1D6DB1D29CD3200FA59CC /* shGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shGeometry.h; sourceTree = "<group>"; };
+		E2A1D6DC1D29CD3200FA59CC /* shImage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shImage.c; sourceTree = "<group>"; };
+		E2A1D6DD1D29CD3200FA59CC /* shImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shImage.h; sourceTree = "<group>"; };
+		E2A1D6DE1D29CD3200FA59CC /* shPaint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shPaint.c; sourceTree = "<group>"; };
+		E2A1D6DF1D29CD3200FA59CC /* shPaint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shPaint.h; sourceTree = "<group>"; };
+		E2A1D6E01D29CD3200FA59CC /* shParams.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shParams.c; sourceTree = "<group>"; };
+		E2A1D6E11D29CD3200FA59CC /* shPath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shPath.c; sourceTree = "<group>"; };
+		E2A1D6E21D29CD3200FA59CC /* shPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shPath.h; sourceTree = "<group>"; };
+		E2A1D6E31D29CD3200FA59CC /* shPipeline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shPipeline.c; sourceTree = "<group>"; };
+		E2A1D6E41D29CD3200FA59CC /* shVectors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shVectors.c; sourceTree = "<group>"; };
+		E2A1D6E51D29CD3200FA59CC /* shVectors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shVectors.h; sourceTree = "<group>"; };
+		E2A1D6E61D29CD3200FA59CC /* shVgu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shVgu.c; sourceTree = "<group>"; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* thicklineDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thicklineDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6BF1D29CD3200FA59CC /* ofxShivaVG */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E2A1D6BF1D29CD3200FA59CC /* ofxShivaVG */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6C01D29CD3200FA59CC /* src */,
+				E2A1D6C71D29CD3200FA59CC /* libs */,
+			);
+			name = ofxShivaVG;
+			sourceTree = "<group>";
+		};
+		E2A1D6C01D29CD3200FA59CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */,
+				E2A1D6C21D29CD3200FA59CC /* ofxShivaVGRenderer.h */,
+				E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */,
+				E2A1D6C41D29CD3200FA59CC /* simpleVGContext.h */,
+				E2A1D6C51D29CD3200FA59CC /* simpleVGPath.cpp */,
+				E2A1D6C61D29CD3200FA59CC /* simpleVGPath.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxShivaVG/src;
+			sourceTree = "<group>";
+		};
+		E2A1D6C71D29CD3200FA59CC /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6C81D29CD3200FA59CC /* ShivaVG */,
+			);
+			name = libs;
+			path = ../../../addons/ofxShivaVG/libs;
+			sourceTree = "<group>";
+		};
+		E2A1D6C81D29CD3200FA59CC /* ShivaVG */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6C91D29CD3200FA59CC /* AUTHORS */,
+				E2A1D6CA1D29CD3200FA59CC /* COPYING */,
+				E2A1D6CB1D29CD3200FA59CC /* include */,
+				E2A1D6CF1D29CD3200FA59CC /* NEWS */,
+				E2A1D6D01D29CD3200FA59CC /* README */,
+				E2A1D6D11D29CD3200FA59CC /* src */,
+			);
+			path = ShivaVG;
+			sourceTree = "<group>";
+		};
+		E2A1D6CB1D29CD3200FA59CC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6CC1D29CD3200FA59CC /* vg */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E2A1D6CC1D29CD3200FA59CC /* vg */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6CD1D29CD3200FA59CC /* openvg.h */,
+				E2A1D6CE1D29CD3200FA59CC /* vgu.h */,
+			);
+			path = vg;
+			sourceTree = "<group>";
+		};
+		E2A1D6D11D29CD3200FA59CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1D6D21D29CD3200FA59CC /* shArrayBase.h */,
+				E2A1D6D31D29CD3200FA59CC /* shArrays.c */,
+				E2A1D6D41D29CD3200FA59CC /* shArrays.h */,
+				E2A1D6D51D29CD3200FA59CC /* shContext.c */,
+				E2A1D6D61D29CD3200FA59CC /* shContext.h */,
+				E2A1D6D71D29CD3200FA59CC /* shDefs.h */,
+				E2A1D6D81D29CD3200FA59CC /* shExtensions.c */,
+				E2A1D6D91D29CD3200FA59CC /* shExtensions.h */,
+				E2A1D6DA1D29CD3200FA59CC /* shGeometry.c */,
+				E2A1D6DB1D29CD3200FA59CC /* shGeometry.h */,
+				E2A1D6DC1D29CD3200FA59CC /* shImage.c */,
+				E2A1D6DD1D29CD3200FA59CC /* shImage.h */,
+				E2A1D6DE1D29CD3200FA59CC /* shPaint.c */,
+				E2A1D6DF1D29CD3200FA59CC /* shPaint.h */,
+				E2A1D6E01D29CD3200FA59CC /* shParams.c */,
+				E2A1D6E11D29CD3200FA59CC /* shPath.c */,
+				E2A1D6E21D29CD3200FA59CC /* shPath.h */,
+				E2A1D6E31D29CD3200FA59CC /* shPipeline.c */,
+				E2A1D6E41D29CD3200FA59CC /* shVectors.c */,
+				E2A1D6E51D29CD3200FA59CC /* shVectors.h */,
+				E2A1D6E61D29CD3200FA59CC /* shVgu.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* thicklineDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* thickline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "thickline" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = thickline;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* thicklineDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "thickline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* thickline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1D6EE1D29CD3200FA59CC /* shImage.c in Sources */,
+				E2A1D6ED1D29CD3200FA59CC /* shGeometry.c in Sources */,
+				E2A1D6F01D29CD3200FA59CC /* shParams.c in Sources */,
+				E2A1D6EF1D29CD3200FA59CC /* shPaint.c in Sources */,
+				E2A1D6F21D29CD3200FA59CC /* shPipeline.c in Sources */,
+				E2A1D6F41D29CD3200FA59CC /* shVgu.c in Sources */,
+				E2A1D6EA1D29CD3200FA59CC /* shArrays.c in Sources */,
+				E2A1D6E91D29CD3200FA59CC /* simpleVGPath.cpp in Sources */,
+				E2A1D6EC1D29CD3200FA59CC /* shExtensions.c in Sources */,
+				E2A1D6E81D29CD3200FA59CC /* simpleVGContext.cpp in Sources */,
+				E2A1D6F11D29CD3200FA59CC /* shPath.c in Sources */,
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E2A1D6E71D29CD3200FA59CC /* ofxShivaVGRenderer.cpp in Sources */,
+				E2A1D6F31D29CD3200FA59CC /* shVectors.c in Sources */,
+				E2A1D6EB1D29CD3200FA59CC /* shContext.c in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxShivaVG/libs/ShivaVG/include/ ../../../../../Dropbox/of_v20151028_osx_release/addons/ofxShivaVG/libs/ShivaVG/include/";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxShivaVG/libs/ShivaVG/include/ ../../../../../Dropbox/of_v20151028_osx_release/addons/ofxShivaVG/libs/ShivaVG/include/";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "thickline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "thickline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
