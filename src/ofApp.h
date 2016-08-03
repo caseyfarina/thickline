@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxShivaVGRenderer.h"
+#include "fatline.h"
 
 class ofApp : public ofBaseApp{
     
@@ -23,8 +24,11 @@ public:
     
     
     
+    
+    
     ofPolyline line;
     ofPath _curvedPath;
     
+    fatline newfat;
     
 };

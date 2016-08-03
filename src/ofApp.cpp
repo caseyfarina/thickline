@@ -8,17 +8,44 @@ void ofApp::setup(){
     ofSetFrameRate(100.0f);
     ofSetCurveResolution(5);
     
-       
+    newfat.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    
+    
+    float tempX = ofMap(ofNoise(ofGetFrameNum()*0.02f),0,1,0,ofGetWidth());
+    float tempY = ofMap(ofNoise(ofGetFrameNum()*0.021f+3000),0,1,0,ofGetHeight());
+
+    float tempX1 = ofMap(ofNoise(ofGetFrameNum()*0.03f),0,1,0,ofGetWidth());
+    float tempY1 = ofMap(ofNoise(ofGetFrameNum()*0.031f+3000),0,1,0,ofGetHeight());
+    
+    newfat.line.curveTo(ofPoint(tempX1,tempY1));
+    if(newfat.line.size() > 10){
+        while (newfat.line.size()>400) {
+            newfat.line.getVertices().erase(newfat.line.getVertices().begin());
+        }
+        
+    }
+    
+    
+    newfat.update();
+
+    line.addVertex(ofPoint(tempX,tempY));
+    if(line.size() > 30){
+        line.getVertices().erase(line.getVertices().begin());
+        //line.getVertices().resize(30);
+    }
     
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
+    ofBackground(255, 255, 255);
+    newfat.draw(.4);
     
     ofMesh meshy;
     meshy.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
@@ -135,3 +162,4 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){
     
 }
+

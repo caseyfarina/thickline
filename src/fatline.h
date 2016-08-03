@@ -9,18 +9,20 @@
 #ifndef ____fatline__
 #define ____fatline__
 
-#include "ofApp.h"
+#include "ofMain.h"
 
 class fatline{
     public:
         void setup();
         void update();
-        void draw();
+        void draw(float thickness);
+        
     
     
-
+    vector < ofVec2f > thickness;
     ofPolyline line;
-    ofPath _curvedPath;
+    //ofPath _curvedPath;
+   // ofMesh meshy;
     
 };
 
