@@ -6,7 +6,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFrameRate(100.0f);
-    ofSetCurveResolution(100);
+    ofSetCurveResolution(5);
     
        
 }
@@ -48,7 +48,7 @@ void ofApp::draw(){
         
         float dist = diff.length();
         //ofSeedRandom(4);
-        float w = ofMap(ofNoise(ofGetFrameNum()*0.002f,i*0.01),0,1,0,0.4);
+        float w = ofMap(ofNoise(ofGetFrameNum()*0.002f,i*0.01),0,1,0,0.8);
         
         //float w = ofMap(dist, 0, 5, 3, .1, true);
         

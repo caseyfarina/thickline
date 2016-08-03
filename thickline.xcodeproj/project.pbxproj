@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2115EFB1D51C63A00607090 /* fatline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115EF91D51C63A00607090 /* fatline.cpp */; };
 		E2A1D6E71D29CD3200FA59CC /* ofxShivaVGRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */; };
 		E2A1D6E81D29CD3200FA59CC /* simpleVGContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */; };
 		E2A1D6E91D29CD3200FA59CC /* simpleVGPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C51D29CD3200FA59CC /* simpleVGPath.cpp */; };
@@ -56,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E2115EF91D51C63A00607090 /* fatline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fatline.cpp; sourceTree = "<group>"; };
+		E2115EFA1D51C63A00607090 /* fatline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fatline.h; sourceTree = "<group>"; };
 		E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxShivaVGRenderer.cpp; sourceTree = "<group>"; };
 		E2A1D6C21D29CD3200FA59CC /* ofxShivaVGRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxShivaVGRenderer.h; sourceTree = "<group>"; };
 		E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simpleVGContext.cpp; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E2115EF91D51C63A00607090 /* fatline.cpp */,
+				E2115EFA1D51C63A00607090 /* fatline.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
@@ -345,6 +350,7 @@
 			files = (
 				E2A1D6EE1D29CD3200FA59CC /* shImage.c in Sources */,
 				E2A1D6ED1D29CD3200FA59CC /* shGeometry.c in Sources */,
+				E2115EFB1D51C63A00607090 /* fatline.cpp in Sources */,
 				E2A1D6F01D29CD3200FA59CC /* shParams.c in Sources */,
 				E2A1D6EF1D29CD3200FA59CC /* shPaint.c in Sources */,
 				E2A1D6F21D29CD3200FA59CC /* shPipeline.c in Sources */,
