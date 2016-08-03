@@ -7,3 +7,15 @@
 //
 
 #include "fatline.h"
+
+void fatline::setup() {
+    
+}
+
+void fatline::update() {
+    
+}
+
+void fatline::draw() {
+    
+}
