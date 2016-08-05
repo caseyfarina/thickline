@@ -8,7 +8,7 @@ int main( ){
     ofAppGlutWindow window; // create a window
     
     // THIS IS THE IMPORTANT PART:
-    window.setGlutDisplayString("rgba alpha double stencil samples>=8");
+    window.setGlutDisplayString("rgba alpha double stencil samples>=4");
     
     
     // set width, height, mode (OF_WINDOW or OF_FULLSCREEN)

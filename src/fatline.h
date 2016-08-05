@@ -15,12 +15,15 @@ class fatline{
     public:
         void setup();
         void update();
-        void draw(float thickness);
+        void draw(float thickness, float noiseScale, float lineNoise);
         
     
     
     vector < ofVec2f > thickness;
     ofPolyline line;
+    float randomNoiseOffset;
+    
+    
     //ofPath _curvedPath;
    // ofMesh meshy;
     

@@ -9,6 +9,7 @@
 #include "fatline.h"
 
 void fatline::setup() {
+    randomNoiseOffset = ofRandom(500.000);
     
 }
 
@@ -26,7 +27,7 @@ void fatline::update() {
     
 }
 
-void fatline::draw(float thickness) {
+void fatline::draw(float thickness,float noiseScale, float lineNoise) {
     ofMesh meshy;
     meshy.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
     
@@ -54,15 +55,23 @@ void fatline::draw(float thickness) {
         
         float dist = diff.length();
         //ofSeedRandom(4);
-        float w = ofMap(ofNoise(ofGetFrameNum()*0.02f,i*0.01),0,1,0,thickness);
+        float w = ofMap(
+                        ofNoise(
+                                line.getVertices()[i].x * noiseScale,
+                                line.getVertices()[i].y * noiseScale)
+                                ,0,1,-thickness,thickness);
         
         //float w = ofMap(dist, 0, 5, 3, .1, true);
         
-        
+        float ln = ofMap(
+                        ofNoise(
+                                line.getVertices()[i].x * noiseScale,
+                                line.getVertices()[i].y * noiseScale)
+                        ,0,1,-thickness,thickness);
         
         //widthSmooth = 0.9f * widthSmooth + w ;
         
-        if (i == 0 || i == line.getVertices().size()) widthSmooth = 0;
+        if (i == 0 || i == line.getVertices().size() - 1) widthSmooth = 0;
         else{
             widthSmooth = 0.9 * widthSmooth + w;
         }
@@ -75,14 +84,14 @@ void fatline::draw(float thickness) {
         
         
         
-        meshy.addVertex(  line.getVertices()[i] +  offset + (w *3));
-        meshy.addVertex(  line.getVertices()[i] -  offset + (w*3));
+        meshy.addVertex(  line.getVertices()[i] +  offset + (w));
+        meshy.addVertex(  line.getVertices()[i] -  offset + (w));
         
         
         
     }
     
-    ofSetColor(0,0,0);
+    ofSetColor(randomNoiseOffset*0.3,randomNoiseOffset*0.3,randomNoiseOffset*0.3);
     meshy.draw();
 
     

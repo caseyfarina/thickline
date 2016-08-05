@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E2115EFB1D51C63A00607090 /* fatline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115EF91D51C63A00607090 /* fatline.cpp */; };
+		E2115F1B1D53CAA500607090 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F0A1D53CAA500607090 /* ofxBaseGui.cpp */; };
+		E2115F1C1D53CAA500607090 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F0C1D53CAA500607090 /* ofxButton.cpp */; };
+		E2115F1D1D53CAA500607090 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F0F1D53CAA500607090 /* ofxGuiGroup.cpp */; };
+		E2115F1E1D53CAA500607090 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F111D53CAA500607090 /* ofxLabel.cpp */; };
+		E2115F1F1D53CAA500607090 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F131D53CAA500607090 /* ofxPanel.cpp */; };
+		E2115F201D53CAA500607090 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F151D53CAA500607090 /* ofxSlider.cpp */; };
+		E2115F211D53CAA500607090 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F171D53CAA500607090 /* ofxSliderGroup.cpp */; };
+		E2115F221D53CAA500607090 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2115F191D53CAA500607090 /* ofxToggle.cpp */; };
 		E2A1D6E71D29CD3200FA59CC /* ofxShivaVGRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */; };
 		E2A1D6E81D29CD3200FA59CC /* simpleVGContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */; };
 		E2A1D6E91D29CD3200FA59CC /* simpleVGPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D6C51D29CD3200FA59CC /* simpleVGPath.cpp */; };
@@ -59,6 +67,23 @@
 /* Begin PBXFileReference section */
 		E2115EF91D51C63A00607090 /* fatline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fatline.cpp; sourceTree = "<group>"; };
 		E2115EFA1D51C63A00607090 /* fatline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fatline.h; sourceTree = "<group>"; };
+		E2115F0A1D53CAA500607090 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		E2115F0B1D53CAA500607090 /* ofxBaseGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		E2115F0C1D53CAA500607090 /* ofxButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		E2115F0D1D53CAA500607090 /* ofxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
+		E2115F0E1D53CAA500607090 /* ofxGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
+		E2115F0F1D53CAA500607090 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		E2115F101D53CAA500607090 /* ofxGuiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		E2115F111D53CAA500607090 /* ofxLabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		E2115F121D53CAA500607090 /* ofxLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		E2115F131D53CAA500607090 /* ofxPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		E2115F141D53CAA500607090 /* ofxPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		E2115F151D53CAA500607090 /* ofxSlider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		E2115F161D53CAA500607090 /* ofxSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		E2115F171D53CAA500607090 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		E2115F181D53CAA500607090 /* ofxSliderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		E2115F191D53CAA500607090 /* ofxToggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		E2115F1A1D53CAA500607090 /* ofxToggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
 		E2A1D6C11D29CD3200FA59CC /* ofxShivaVGRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxShivaVGRenderer.cpp; sourceTree = "<group>"; };
 		E2A1D6C21D29CD3200FA59CC /* ofxShivaVGRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxShivaVGRenderer.h; sourceTree = "<group>"; };
 		E2A1D6C31D29CD3200FA59CC /* simpleVGContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simpleVGContext.cpp; sourceTree = "<group>"; };
@@ -125,8 +150,42 @@
 			isa = PBXGroup;
 			children = (
 				E2A1D6BF1D29CD3200FA59CC /* ofxShivaVG */,
+				E2115F081D53CAA500607090 /* ofxGui */,
 			);
 			name = addons;
+			sourceTree = "<group>";
+		};
+		E2115F081D53CAA500607090 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				E2115F091D53CAA500607090 /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		E2115F091D53CAA500607090 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E2115F0A1D53CAA500607090 /* ofxBaseGui.cpp */,
+				E2115F0B1D53CAA500607090 /* ofxBaseGui.h */,
+				E2115F0C1D53CAA500607090 /* ofxButton.cpp */,
+				E2115F0D1D53CAA500607090 /* ofxButton.h */,
+				E2115F0E1D53CAA500607090 /* ofxGui.h */,
+				E2115F0F1D53CAA500607090 /* ofxGuiGroup.cpp */,
+				E2115F101D53CAA500607090 /* ofxGuiGroup.h */,
+				E2115F111D53CAA500607090 /* ofxLabel.cpp */,
+				E2115F121D53CAA500607090 /* ofxLabel.h */,
+				E2115F131D53CAA500607090 /* ofxPanel.cpp */,
+				E2115F141D53CAA500607090 /* ofxPanel.h */,
+				E2115F151D53CAA500607090 /* ofxSlider.cpp */,
+				E2115F161D53CAA500607090 /* ofxSlider.h */,
+				E2115F171D53CAA500607090 /* ofxSliderGroup.cpp */,
+				E2115F181D53CAA500607090 /* ofxSliderGroup.h */,
+				E2115F191D53CAA500607090 /* ofxToggle.cpp */,
+				E2115F1A1D53CAA500607090 /* ofxToggle.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxGui/src;
 			sourceTree = "<group>";
 		};
 		E2A1D6BF1D29CD3200FA59CC /* ofxShivaVG */ = {
@@ -352,6 +411,7 @@
 				E2A1D6ED1D29CD3200FA59CC /* shGeometry.c in Sources */,
 				E2115EFB1D51C63A00607090 /* fatline.cpp in Sources */,
 				E2A1D6F01D29CD3200FA59CC /* shParams.c in Sources */,
+				E2115F1B1D53CAA500607090 /* ofxBaseGui.cpp in Sources */,
 				E2A1D6EF1D29CD3200FA59CC /* shPaint.c in Sources */,
 				E2A1D6F21D29CD3200FA59CC /* shPipeline.c in Sources */,
 				E2A1D6F41D29CD3200FA59CC /* shVgu.c in Sources */,
@@ -359,12 +419,19 @@
 				E2A1D6E91D29CD3200FA59CC /* simpleVGPath.cpp in Sources */,
 				E2A1D6EC1D29CD3200FA59CC /* shExtensions.c in Sources */,
 				E2A1D6E81D29CD3200FA59CC /* simpleVGContext.cpp in Sources */,
+				E2115F221D53CAA500607090 /* ofxToggle.cpp in Sources */,
+				E2115F1C1D53CAA500607090 /* ofxButton.cpp in Sources */,
 				E2A1D6F11D29CD3200FA59CC /* shPath.c in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E2A1D6E71D29CD3200FA59CC /* ofxShivaVGRenderer.cpp in Sources */,
+				E2115F211D53CAA500607090 /* ofxSliderGroup.cpp in Sources */,
+				E2115F1F1D53CAA500607090 /* ofxPanel.cpp in Sources */,
 				E2A1D6F31D29CD3200FA59CC /* shVectors.c in Sources */,
+				E2115F201D53CAA500607090 /* ofxSlider.cpp in Sources */,
 				E2A1D6EB1D29CD3200FA59CC /* shContext.c in Sources */,
+				E2115F1E1D53CAA500607090 /* ofxLabel.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				E2115F1D1D53CAA500607090 /* ofxGuiGroup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,6 +3,10 @@
 #include "ofMain.h"
 #include "ofxShivaVGRenderer.h"
 #include "fatline.h"
+#include "ofxGui.h"
+
+
+
 
 class ofApp : public ofBaseApp{
     
@@ -21,14 +25,16 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
+    ofxPanel gui;
     
+    int lineNumber = 60;
     
-    
-    
-    
+    ofParameter<float> timeScale;
+    ofParameter<float> noiseScaleLine;
+    ofParameter<float> thickness;
     ofPolyline line;
     ofPath _curvedPath;
     
-    fatline newfat;
+    vector < fatline > newfats;
     
 };
