@@ -7,11 +7,16 @@
 void ofApp::setup(){
     ofSetFrameRate(100.0f);
     ofSetCurveResolution(5);
+    ofLoadImage(pixels, "texture.png");
+    pixels.getPixelFormat();
+    
     
     gui.setup();
-    gui.add(timeScale.set("timeScale",0.0,0.0,1.0));
+    gui.add(timeScale.set("timeScale",0.0,0.0,3.0));
     gui.add(noiseScaleLine.set("noiseScale",0.0,0.0,0.5));
     gui.add(thickness.set("thickness",0.0,0.0,0.8));
+    gui.add(scaleX.set("scaleX",0.0,0.0,2000));
+    gui.add(scaleY.set("scaleY",0.0,0.0,2000));
     
     for (int i = 0; i < lineNumber; i++) {
         fatline fatter;
@@ -45,11 +50,23 @@ void ofApp::update(){
         
         float tempX1 = ofMap(
                              ofNoise(float(time+((i+1)*0.7862)))
-                             ,0,1,0,ofGetWidth());
+                             ,0,1,0,scaleX);
         float tempY1 = ofMap(
                              ofNoise(float(time+((i+1)*0.28762)))
-                             ,0,1,0,ofGetHeight());
+                             ,0,1,0,scaleY);
         
+        
+        ofColor c = pixels.getColor(tempX1,tempY1
+                                    
+                                    /*
+                                         floor(fmod(time+(i*4),pixels.getWidth())),
+                                         floor(fmod(time+(i*7),pixels.getHeight()))
+                                     */
+                                    
+                                          );
+        
+        float newX = ofMap(c[0],0,255,0,scaleX);
+        float newY = ofMap(c[2],0,255,0,scaleY);
         
         newfats[i].line.addVertex(ofPoint(tempX1,tempY1));
         if(newfats[i].line.size() > 10){
@@ -78,7 +95,7 @@ void ofApp::draw(){
     ofDrawBitmapString(ofGetFrameRate(),500,20);
     
     for (int i = 0; i < lineNumber; i++) {
-        newfats[i].draw(thickness, noiseScaleLine);
+        newfats[i].draw(thickness, noiseScaleLine,0.0);
     }
     /*
     ofMesh meshy;

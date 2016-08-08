@@ -27,14 +27,18 @@ public:
     
     ofxPanel gui;
     
-    int lineNumber = 60;
+    int lineNumber = 800;
     
     ofParameter<float> timeScale;
     ofParameter<float> noiseScaleLine;
     ofParameter<float> thickness;
+    ofParameter<float> scaleX;
+    ofParameter<float> scaleY;
     ofPolyline line;
     ofPath _curvedPath;
     
     vector < fatline > newfats;
+    
+    ofPixels pixels;
     
 };

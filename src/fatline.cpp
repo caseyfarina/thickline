@@ -31,6 +31,7 @@ void fatline::draw(float thickness,float noiseScale, float lineNoise) {
     ofMesh meshy;
     meshy.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
     
+    float time = ofGetElapsedTimef();
     float widthSmooth = 5;
     float angleSmooth;
     
@@ -57,17 +58,26 @@ void fatline::draw(float thickness,float noiseScale, float lineNoise) {
         //ofSeedRandom(4);
         float w = ofMap(
                         ofNoise(
-                                line.getVertices()[i].x * noiseScale,
-                                line.getVertices()[i].y * noiseScale)
+                                line.getVertices()[i].x * noiseScale + (time*0.023),
+                                line.getVertices()[i].y * noiseScale + (time*0.242))
                                 ,0,1,-thickness,thickness);
         
         //float w = ofMap(dist, 0, 5, 3, .1, true);
-        
-        float ln = ofMap(
+        /*
+        float lnX = ofMap(
                         ofNoise(
                                 line.getVertices()[i].x * noiseScale,
                                 line.getVertices()[i].y * noiseScale)
-                        ,0,1,-thickness,thickness);
+                        ,0,1,-lineNoise,lineNoise);
+        
+        float lnY = ofMap(
+                          ofNoise(
+                                  line.getVertices()[i].y * noiseScale,
+                                  line.getVertices()[i].x * noiseScale)
+                          ,0,1,-lineNoise,lineNoise);
+        
+        //NEED TO ADD THESE lnY and X to the actual line values
+*/
         
         //widthSmooth = 0.9f * widthSmooth + w ;
         
@@ -91,7 +101,7 @@ void fatline::draw(float thickness,float noiseScale, float lineNoise) {
         
     }
     
-    ofSetColor(randomNoiseOffset*0.3,randomNoiseOffset*0.3,randomNoiseOffset*0.3);
+    ofSetColor(0,randomNoiseOffset*0.3);
     meshy.draw();
 
     
